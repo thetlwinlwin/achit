@@ -15,5 +15,5 @@ A new Flutter project.
 - Added flutter web loading. Html with image in body tag, style tag inside header tag. set timer to remove that image after web is loaded in script tag.
 - Flutter web can be hosted locally.In case you need to debug (I tried my flutter web in iphone), build the web and cd build/web and run python http server with this cmd "python -m http.server 8000". 
 - In my case, custom clippath doesn't render properly with html renderer. So, canvaskit renderer is used.
-- *** If you build the web with canvaskit there is a strong chance that flutter js not found error when running with python http server locally. To fix this, remove "<base href='$FLUTTER_BASE_HREF'>" in web/index.html.Then clean the project with "flutter clean" and rebuild again. ***
+- **If you build the web with canvaskit there is a strong chance that flutter js not found error when running with python http server locally. To fix this, remove "<base href='$FLUTTER_BASE_HREF'>" in web/index.html.Then clean the project with "flutter clean" and rebuild again.**
 - Loading indicator with implicit animation is also added.
